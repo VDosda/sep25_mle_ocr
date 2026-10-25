@@ -1,0 +1,42 @@
+# Répertoires volumineux à exclure
+workspace/
+data/
+models/
+exports/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Datasets & archives
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.7z
+
+# Environnements virtuels
+venv/
+.env/
+.env.local/
+
+# Jupyter caches
+.ipynb_checkpoints/
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+Dockerfile
+docker-compose.yml

@@ -1,0 +1,53 @@
+# --- Jupyter (compatible JupyterLab 3.x) ---
+streamlit==1.36.0
+elyra-streamlit-extension==0.1.0
+jupyterlab==3.6.7
+myst-parser
+jupyterlab-myst
+streamlit-markdown==1.1.0
+ipykernel==6.29.4
+ipywidgets==8.1.2
+jupyterlab_widgets==3.0.10
+jupyterlab-git==0.41.0
+jupyterlab_code_formatter==3.0.3
+black==24.4.2
+isort==5.13.2
+jupyterlab-lsp==3.10.0          # ← FIX
+python-lsp-server==1.11.0
+plotly==5.22.0
+
+# --- Utils ---
+numpy==1.26.4
+pandas==2.2.2
+pyarrow==17.0.0
+matplotlib==3.8.4
+tqdm==4.66.4
+
+# --- Vision ---
+opencv-python-headless==4.7.0.72
+scikit-image==0.22.0
+Pillow==10.3.0
+
+# --- OCR ---
+paddleocr==2.7.0
+paddlepaddle==2.6.2
+pytesseract==0.3.10
+easyocr==1.7.1
+
+# --- ML ---
+scikit-learn==1.5.0
+scipy==1.10.1
+joblib==1.4.2
+threadpoolctl==3.5.0
+shapely==2.0.4
+shap==0.44.1
+
+# --- Parquet ---
+fastparquet==2024.5.0
+
+# --- Text / Regex ---
+regex==2024.5.15
+
+# --- BM25 ---
+rank-bm25==0.2.2
+elasticsearch==7.17.9

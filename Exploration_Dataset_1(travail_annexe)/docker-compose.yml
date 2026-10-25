@@ -1,0 +1,30 @@
+services:
+
+  #  JUPYTER LAB
+  ml-ocr-jupyter:
+    container_name: ${PROJECT_PREFIX}-jupyter
+    image: ${PROJECT_PREFIX}-jupyter:${IMAGE_VERSION}
+    mem_limit: 32g
+    shm_size: 4g
+    build:
+      context: ./docker/jupyter
+      dockerfile: Dockerfile
+    environment:
+      - PYTHONPATH=/workspace:/ml
+    volumes:
+      - ./workspace:/workspace
+      - ml-ocr-jupyter_data:/data
+    ports:
+      - "8888:8888"
+    networks:
+      - ${PROJECT_PREFIX}-network
+    restart: unless-stopped
+
+#  VOLUMES PERSISTANTS
+volumes:
+  ml-ocr-jupyter_data:
+
+#  RÉSEAU
+networks:
+  ml-ocr-network:
+    driver: bridge
