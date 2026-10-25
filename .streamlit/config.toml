@@ -1,0 +1,10 @@
+# lu par Streamlit quand l'application est lancée depuis la racine du dépôt
+[theme]
+baseFontSize = 18  # taille du texte, en pixels (16 par défaut)
+
+# fonds par défaut, en thème clair et en thème sombre
+[theme.light]
+backgroundColor = "#ffffff"
+
+[theme.dark]
+backgroundColor = "#0e1117"

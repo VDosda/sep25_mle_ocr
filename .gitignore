@@ -164,3 +164,13 @@ cython_debug/
 
 # Data folder
 data/
+
+/data
+.DS_Store
+models/*
+!models/.gitkeep
+src/streamlit/televersements/
+*.joblib
+*.safetensors
+*.pt
+*.pb
